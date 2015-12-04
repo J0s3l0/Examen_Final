@@ -1,0 +1,9 @@
+funciones generales
+
+
+
+
+Directivas OpenMP
+
+
+Funciones de Comunicación MPI
