@@ -256,10 +256,10 @@ void * mover(void * arr) {
 
     *(tablero + (j * N) + i) = 0;
     sprintf(ruta + n * 7,"(%d, %d)", i, j);
-    sprintf(*(rutas + caminos), ruta);
+    sprintf(*(rutas + total_caminos), ruta);
 
     pthread_mutex_lock(&m_caminos);
-    ++caminos;
+    ++total_caminos;
     pthread_mutex_unlock(&m_caminos);
 
     pthread_mutex_unlock(&m_tablero);
